@@ -5,11 +5,15 @@
 </head>
 <body>
 	<%= yield %>
-		<form class="navbar-form navbar-left" role="search">
+		<form class="navbar-form navbar-left" role="search" name="form_item" id="form_item" action="/add_growl" method="post">
   			<div class="form-group">
-    			<input type="text" class="form-control" placeholder="Search">
+    			<input class="form-control" type="text" placeholder="Put growl here" name="growl_name" id="growl_name">
   			</div>
-  			<button type="submit" class="btn btn-default">Submit</button>
+  			<button type="submit" class="btn btn-default">GROWL</button>
 		</form>
+
+		
+	
+
 </body>
 </html>
