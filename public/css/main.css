@@ -1,11 +1,8 @@
 .container {
-	
 	position: relative;
 	font-size: 3em;
 	text-align: center;
-/*	background-color: #95a5a6;
-*/	margin: 0 auto;
-
+	margin: 0 auto;
 }
 
 ul {
@@ -18,7 +15,6 @@ ul {
 	width: 75em;
 	height: 4em;
 	margin: 0 auto;
-
 }
 
 body {
@@ -28,14 +24,7 @@ body {
 
 button input[type="submit"] {
  background: black;
- color: white;
-	
+ color: white;	
 }
 
 
-/*.form_control {
-	
-
-}
-
-*/

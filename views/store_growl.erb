@@ -1,13 +1,9 @@
-<!-- <h2>Your Wish List</h2> -->
-
 <% if @growl_directory.empty? %>
 	
 	<h4>No Growls posted yet</h4>
 
 <% else %>
 
-
-	
 	<ul id="growl-list">
 	<% @growl_directory.each do |growl| %>
 		<li><%= growl %></li>
@@ -16,4 +12,3 @@
 
 <% end %>
 
-<!-- <a href="/add_item">Add more stuff!</a> -->
