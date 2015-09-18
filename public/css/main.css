@@ -1,0 +1,27 @@
+.container {
+	
+	position: relative;
+	font-size: 3em;
+	text-align: center;
+	background-color: #95a5a6;
+	margin: 0 auto;
+
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+#growl_name {
+	width: 75em;
+	height: 4em;
+	margin: 0 auto;
+}
+
+/*.form_control {
+	
+
+}
+
+*/

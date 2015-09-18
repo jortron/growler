@@ -1,18 +1,26 @@
 
 <!-- <a href="/store_growl">See your growls here</a> -->
+<div class="container row">
+	<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<div class="container-fluid">		
+				<% if @growl_directory.empty? %>
+					
+					<h4>No Growls posted yet</h4>
 
-<% if @growl_directory.empty? %>
-	
-	<h4>No Growls posted yet</h4>
+				<% else %>
 
-<% else %>
+					<h4>Your previous Growls</h4>
+					
+					<ul id="growl-list">
+					<% @growl_directory.each do |growl| %>
+						<li><%= growl %></li>
+					<% end %>
+					</ul>
 
-	<h4>Your previous Growls</h4>
-	
-	<ul id="growl-list">
-	<% @growl_directory.each do |growl| %>
-		<li><%= growl %></li>
-	<% end %>
-	</ul>
-
-<% end %>
+				<% end %>
+				</div>	
+			</div>	
+		<div class="col-md-3"></div>
+	</div>	
+</div>
