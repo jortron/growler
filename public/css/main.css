@@ -3,21 +3,35 @@
 	position: relative;
 	font-size: 3em;
 	text-align: center;
-	background-color: #95a5a6;
-	margin: 0 auto;
+/*	background-color: #95a5a6;
+*/	margin: 0 auto;
 
 }
 
 ul {
 	list-style-type: none;
 	text-align: center;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #growl_name {
 	width: 75em;
 	height: 4em;
 	margin: 0 auto;
+
 }
+
+body {
+	background: radial-gradient(yellow, red, blue, green);
+	font-family: 'Quicksand', sans-serif;
+}
+
+button input[type="submit"] {
+ background: black;
+ color: white;
+	
+}
+
 
 /*.form_control {
 	
