@@ -6,4 +6,18 @@
 
 <a href="/store_growl">See your growls here</a>
 
-<p><%= @growl_name %></p>
+<% if @growl_directory.empty? %>
+	
+	<h4>No Growls posted yet</h4>
+
+<% else %>
+
+	<h4>Your previous Growls</h4>
+	
+	<ul id="growl-list">
+	<% @growl_directory.each do |growl| %>
+		<li><%= growl %></li>
+	<% end %>
+	</ul>
+
+<% end %>
