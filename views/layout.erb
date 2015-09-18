@@ -6,19 +6,29 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
 <body>
-	<%= yield %>
+	
 
-	<div class="jumbotron">
-  		<h1>Growler</h1>
-				<form class="navbar-form navbar-left" role="search" name="form_item" id="form_item" action="/add_growl" method="post">
+	<!-- <div class="jumbotron">
+  		<h1>Growler</h1> -->
+
+  		<div class="row">
+  			<div class="col-md-12">
+
+				<form class="navbar-inverse" role="search" name="form_item" id="form_item" action="/add_growl" method="post">
+					<div class="container-fluid">	
+
 		  			<div class="form-group">
 		    			<input class="form-control" type="text" placeholder="Put growl here" name="growl_name" id="growl_name" maxlength="142">
 		  			</div>
+
 		  			<button type="submit" class="btn btn-default">GROWL</button>
+		  			</div>	
 				</form>
-			<div class="container-fluid">	
 			</div>	
-	</div>
+		</div>	
+	<%= yield %>		
+			
+	<!-- </div> -->
 
 </body>
 </html>
